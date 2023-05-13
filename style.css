@@ -39,6 +39,7 @@
   line-height: 150%;
   background-color: #f0f0f0;
   font-family: "Inter", sans-serif;
+  resize: none;
 }
 
 .text::placeholder {
@@ -102,12 +103,15 @@
   border-style: none;
   transition: 0.7s all;
   cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 5px;
 }
 
 .BtnEncriptar:hover {
   background-color: #43dde6;
   transform: scale(1.1);
   color: #364f6b;
+  margin: 0 13px;
 }
 
 .Btn-desencriptar {
@@ -131,6 +135,7 @@
   text-transform: uppercase;
   transition: 0.7s all;
   cursor: pointer;
+  margin: 0 5px;
 }
 
 .Btn-desencriptar:hover {
@@ -139,6 +144,7 @@
   font-weight: bold;
   border: none;
   color: #fc5185;
+  margin: 0 13px;
 }
 /* Contenedor Con la encriptacion  */
 
@@ -199,6 +205,18 @@
   height: 300px;
 }
 
+footer {
+  text-align: center;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.Col{
+  padding: 1%;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
 /* Estilos responsive */
 
 @media screen and (max-width: 912px) {
@@ -240,7 +258,9 @@
   .BtnEncriptar,
   .Btn-desencriptar {
     width: 48%;
-    border-radius: 16px;
+    border-radius: 10px;
+    margin: 0 13px;
+    text-transform: uppercase;
   }
   .BtnEncriptar:hover,
   .Btn-desencriptar:hover {
@@ -250,7 +270,7 @@
   .YaEncriptado {
     position: absolute;
     width: 80%;
-    height: 35%;
+    height: 15%;
     left: 10%;
     top: 80%;
     border-radius: 20px;
