@@ -6,11 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Encriptador Alura</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
   </head>
   <body>
-    <h1>Encriptado de mensajes</h1>
-    <p>Encripta tus mensajes personales, y compártelos con tus amigos.</p>
-    <div class="TextUno"></div>
+    <div class="Titulo">
+      <h1>Encriptado de mensajes</h1>
+      <p>Encripta tus mensajes personales, y compártelos con tus amigos.</p>
+      <hr />
+    </div>
+    <div class="Container">
+      <div class="encriptador">
+        <textarea
+          name="text"
+          class="text"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa un texto aquí 😇"
+        ></textarea>
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button class="BtnEncriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input
+            type="button"
+            class="Btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptador()"
+          />
+        </div>
+        <div class="BtnCopy">
+          <button class="Btn_Copy" type="button" id="BtnCopiar" onclick="copy()">
+            Dame un click y llevate tu encriptacion 🤩
+          </button>
+        </div>
+      </div>
+      <div class="YaEncriptado">
+        <img src="img/01.png" alt="" id="ImgEncriptado" />
+        <div class="mensajeEncriptado" id="mensajeEncriptado">
+          <h2 id="tituloMensaje">Ningún mensaje fue encontrado 🙄</h2>
+          <p id="parrafoEncrip">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="copy">&copy; Copyright ☠ Jesus Mendoza Martinez - 2023</p>
+      <hr />
+      <p class="Col">Medellin / Colombia</p>
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>
