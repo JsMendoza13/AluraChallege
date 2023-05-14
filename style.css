@@ -246,7 +246,7 @@
 
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   font-family: "Inter", sans-serif;
 }
 
@@ -282,18 +282,19 @@ footer {
 
   .botones {
     width: 100%;
-    left: 5%;
-    top: 70%;
+    left: 1%;
+    top: 60%;
+    padding: 10px;
   }
 
   .BtnCopy {
     width: 90%;
-    top: 77%;
+    top: 70%;
   }
 
   .terminos {
     width: 80%;
-    top: 65%;
+    top: 55%;
   }
 
   .terminos p {
@@ -320,10 +321,10 @@ footer {
   }
   .YaEncriptado {
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 15%;
-    left: 13%;
-    top: 87%;
+    left: 4%;
+    top: 82%;
     border-radius: 20px;
     margin-bottom: 10%;
   }
