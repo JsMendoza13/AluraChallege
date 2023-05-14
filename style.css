@@ -274,19 +274,20 @@ footer {
 
   .text {
     width: 80%;
-    height: 60%;
+    height: 50%;
     left: 10%;
     top: 3%;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .botones {
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 5%;
     top: 70%;
   }
 
   .BtnCopy {
+    width: 90%;
     top: 77%;
   }
 
@@ -320,8 +321,8 @@ footer {
   .YaEncriptado {
     position: absolute;
     width: 80%;
-    height: 18%;
-    left: 10%;
+    height: 15%;
+    left: 13%;
     top: 87%;
     border-radius: 20px;
     margin-bottom: 10%;
@@ -329,7 +330,15 @@ footer {
 
   .mensajeEncriptado {
     width: 90%;
-    top: 5%;
+    height: 6%;
+    top: 45%;
+  }
+  .mensajeEncriptado h2 {
+    font-size: 15px;
+  }
+  .mensajeEncriptado p {
+    font-size: 12px;
+    margin-top: -10px;
   }
   .YaEncriptado img {
     top: 0;
