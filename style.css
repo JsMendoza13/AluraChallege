@@ -146,6 +146,45 @@
   color: #fc5185;
   margin: 0 13px;
 }
+
+.BtnCopy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 85%;
+}
+
+.Btn_Copy {
+  padding: 2%;
+  width: 55%;
+  background-color: #2fb5e2;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: #f0f0f0;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.7s all;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.Btn_Copy:hover {
+  background-color: #d7bb55;
+  transform: scale(1.1);
+  font-weight: bold;
+  border: none;
+  color: #fc5185;
+  margin: 0 13px;
+}
+
 /* Contenedor Con la encriptacion  */
 
 .YaEncriptado {
@@ -211,7 +250,7 @@ footer {
   font-family: "Inter", sans-serif;
 }
 
-.Col{
+.Col {
   padding: 1%;
   line-height: 120%;
   text-transform: uppercase;
@@ -246,6 +285,11 @@ footer {
     left: 10%;
     top: 70%;
   }
+
+  .BtnCopy {
+    top: 77%;
+  }
+
   .terminos {
     width: 80%;
     top: 65%;
@@ -262,6 +306,12 @@ footer {
     margin: 0 13px;
     text-transform: uppercase;
   }
+
+  .Btn_Copy {
+    width: 100%;
+    border-radius: 10px;
+  }
+
   .BtnEncriptar:hover,
   .Btn-desencriptar:hover {
     margin: 0.3%;
@@ -270,9 +320,9 @@ footer {
   .YaEncriptado {
     position: absolute;
     width: 80%;
-    height: 15%;
+    height: 18%;
     left: 10%;
-    top: 80%;
+    top: 87%;
     border-radius: 20px;
     margin-bottom: 10%;
   }

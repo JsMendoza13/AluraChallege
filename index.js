@@ -23,7 +23,6 @@ function encriptar() {
     parrafoMensaje.textContent =
       "Ingresa el texto que deseas encriptar o desencriptar";
     alert("Debes ingresar un texto! 🤔");
- 
   }
 }
 
@@ -45,11 +44,27 @@ function desencriptador() {
     tituloMensaje.textContent = "Texto Desencriptado! 😨";
     parrafoMensaje.textContent = "";
     imgExito.src = "img/03.png";
+    setTimeout(reloadPage, 2000);
   } else {
     imgExito.src = "img/01.png";
     tituloMensaje.textContent = "Ningún mensaje fue encontrado 🙄";
     parrafoMensaje.textContent =
       "Ingresa el texto que deseas encriptar o desencriptar";
     alert("Debes ingresar un texto! 🤔");
+  }
+}
+/* Funcion para recargar la pagina en 2Segundos */
+function reloadPage() {
+  location.reload();
+}
+/* funcion para copiar  */
+function copy() {
+  let text = document.getElementById("texto").value;
+  let button = document.getElementById("BtnCopiar");
+
+  if (text.length != 0) {
+    navigator.clipboard.writeText(document.getElementById("texto").value);
+    button.textContent = "¡Tu encriptación ha sido copiada!! 🥵";
+    setTimeout(reloadPage, 2000);
   }
 }
